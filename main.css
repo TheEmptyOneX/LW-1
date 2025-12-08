@@ -1,52 +1,105 @@
+/* Базові налаштування */
 body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9; /* Світлий фон [cite: 190] */
+    font-family: sans-serif;
 }
+
+/* Навігація [cite: 192] */
+.navbar {
+    background: #6ab446; /* Фірмовий зелений [cite: 194] */
+}
+
+.nav-link, .navbar-brand {
+    color: #fff !important; /* Білий текст [cite: 198] */
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #000 !important; /* Чорний при наведенні [cite: 205] */
+}
+
+.navbar-collapse {
+    justify-content: flex-end; /* Меню праворуч [cite: 210] */
+}
+
+/* Хедер (Головний екран) [cite: 227] */
+.header {
+    background-image: url('images/header-background.jpg'); /* Твоя картинка [cite: 239] */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Темний шар поверх картинки [cite: 243] */
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6); /* Прозорість 60% [cite: 244] */
+}
+
+/* Текст по центру екрану [cite: 251] */
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+.description h1 {
+    color: #6ab446; /* Зелений заголовок [cite: 252] */
+    font-weight: bold;
+}
+
 .description p {
-color: #fff;
-font-size: 1.3rem;
-line-height: 1.5;
+    color: #0d0000;
+    font-size: 1.3rem;
+    line-height: 1.5;
 }
+
+/* Стильна кнопка [cite: 254] */
 .description button {
-border: 1px solid #6ab446;
-background: #6ab446;
-border-radius: 0;
-color: #fff;
+    border: 1px solid #6ab446;
+    background: #6ab446;
+    border-radius: 0;
+    color: #fff;
+    padding: 10px 25px;
 }
+
 .description button:hover {
-border: 1px solid #fff;
-background: #fff;
-color: #000;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #000;
 }
+
+/* Секція портфоліо/контенту [cite: 270] */
 .features {
-margin: 4em auto;
-padding: 1em;
-position: relative;
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
 }
+
 .feature-title {
-color: #333;
-font-size: 1.3rem;
-font-weight: 700;
-margin-bottom: 20px;
-text-transform: uppercase;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
+
+/* Тіні для картинок проектів [cite: 272] */
 .features img {
-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-margin-bottom: 16px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
 }
-.features .form-control, .features input {
-border-radius: 0;
-}
-.features .btn {
-background-color: #589b37;
-border: 1px solid #589b37;
-color: #fff;
-margin-top: 20px;
-}
-.features .btn:hover {
-background-color: #333;
-border: 1px solid #333;
-}
+
+/* Футер [cite: 285] */
 .page-footer {
-background-color: #222;
-color: #ccc;
-padding: 60px 0 30px;
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
 }
